@@ -25,6 +25,7 @@ import buildcraft.api.transport.IPipeTile.PipeType;
 import buildcraft.core.DefaultProps;
 import buildcraft.core.proxy.CoreProxy;
 import buildcraft.transport.network.PacketPowerUpdate;
+import buildcraft.transport.pipes.PipePowerCarbonfiber;
 import buildcraft.transport.pipes.PipePowerCobblestone;
 import buildcraft.transport.pipes.PipePowerDiamond;
 import buildcraft.transport.pipes.PipePowerGold;
@@ -46,6 +47,7 @@ public class PipeTransportPower extends PipeTransport {
 		powerCapacities.put(PipePowerQuartz.class, 64);
 		powerCapacities.put(PipePowerGold.class, 256);
 		powerCapacities.put(PipePowerDiamond.class, 1024);
+		powerCapacities.put(PipePowerCarbonfiber.class, 1048576);
 	}
 	private boolean needsInit = true;
 	private TileEntity[] tiles = new TileEntity[6];

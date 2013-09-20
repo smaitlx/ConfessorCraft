@@ -62,6 +62,7 @@ import buildcraft.transport.pipes.PipeItemsSandstone;
 import buildcraft.transport.pipes.PipeItemsStone;
 import buildcraft.transport.pipes.PipeItemsVoid;
 import buildcraft.transport.pipes.PipeItemsWood;
+import buildcraft.transport.pipes.PipePowerCarbonfiber;
 import buildcraft.transport.pipes.PipePowerCobblestone;
 import buildcraft.transport.pipes.PipePowerDiamond;
 import buildcraft.transport.pipes.PipePowerGold;
@@ -78,9 +79,11 @@ import buildcraft.transport.triggers.TriggerFilteredBufferInventoryLevel;
 import buildcraft.transport.triggers.TriggerPipeContents;
 import buildcraft.transport.triggers.TriggerPipeContents.Kind;
 import buildcraft.transport.triggers.TriggerPipeSignal;
+
 import com.google.common.base.Splitter;
 import com.google.common.collect.Iterables;
 import com.google.common.primitives.Ints;
+
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.Mod.Instance;
@@ -93,9 +96,11 @@ import cpw.mods.fml.common.network.NetworkMod;
 import cpw.mods.fml.common.network.NetworkRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
+
 import java.util.LinkedList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
@@ -145,6 +150,7 @@ public class BuildCraftTransport {
 	public static Item pipePowerQuartz;
 	public static Item pipePowerGold;
 	public static Item pipePowerDiamond;
+	public static Item pipePowerCarbonfiber;	//ConfessorBoy 9/20/2013
 	public static ItemFacade facadeItem;
 	public static Item plugItem;
 	public static BlockFilteredBuffer filteredBufferBlock;
@@ -305,6 +311,7 @@ public class BuildCraftTransport {
 			pipePowerQuartz = buildPipe(DefaultProps.PIPE_POWER_QUARTZ_ID, PipePowerQuartz.class, "Quartz Conductive Pipe", Item.redstone, pipeItemsQuartz);
 			pipePowerGold = buildPipe(DefaultProps.PIPE_POWER_GOLD_ID, PipePowerGold.class, "Golden Conductive Pipe", Item.redstone, pipeItemsGold);
 			pipePowerDiamond = buildPipe(DefaultProps.PIPE_POWER_DIAMOND_ID, PipePowerDiamond.class, "Diamond Conductive Pipe", Item.redstone, pipeItemsDiamond);
+			pipePowerCarbonfiber = buildPipe(DefaultProps.PIPE_POWER_CARBONFIBER_ID, PipePowerCarbonfiber.class, "Carbonfiber Conductive Pipe", Item.redstone, pipeItemsDiamond); //ConfessorBoy 9/20/2013
 
 			pipeStructureCobblestone = buildPipe(DefaultProps.PIPE_STRUCTURE_COBBLESTONE_ID, PipeStructureCobblestone.class, "Cobblestone Structure Pipe", Block.gravel, pipeItemsCobblestone);
 

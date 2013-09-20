@@ -87,6 +87,7 @@ public class DefaultProps {
 	public static int PIPE_POWER_QUARTZ_ID = 19208;
 	public static int PIPE_POWER_LAPIS_ID = 19209;
 	public static int PIPE_POWER_DIAZULI_ID = 19210;
+	public static int PIPE_POWER_CARBONFIBER_ID = 19219;
 
 	public static int PIPE_ITEMS_VOID_ID = 19220;
 	public static int PIPE_LIQUIDS_VOID_ID = 19221;
