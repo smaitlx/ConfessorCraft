@@ -60,7 +60,7 @@ import net.minecraftforge.fluids.FluidContainerRegistry;
 import net.minecraftforge.fluids.FluidRegistry;
 import net.minecraftforge.fluids.FluidStack;
 
-@Mod(name = "BuildCraft Energy", version = Version.VERSION, useMetadata = false, modid = "BuildCraft|Energy", dependencies = DefaultProps.DEPENDENCY_CORE)
+@Mod(name = "ConfessorCraft Energy", version = Version.VERSION, useMetadata = false, modid = "ConfessorCraft|Energy", dependencies = DefaultProps.DEPENDENCY_CORE)
 @NetworkMod(channels = {DefaultProps.NET_CHANNEL_NAME}, packetHandler = PacketHandler.class, clientSideRequired = true, serverSideRequired = true)
 public class BuildCraftEnergy {
 
@@ -85,7 +85,7 @@ public class BuildCraftEnergy {
 	public static BCTrigger triggerGreenEngineHeat = new TriggerEngineHeat(DefaultProps.TRIGGER_GREEN_ENGINE_HEAT, EnergyStage.GREEN, "buildcraft.engine.stage.green");
 	public static BCTrigger triggerYellowEngineHeat = new TriggerEngineHeat(DefaultProps.TRIGGER_YELLOW_ENGINE_HEAT, EnergyStage.YELLOW, "buildcraft.engine.stage.yellow");
 	public static BCTrigger triggerRedEngineHeat = new TriggerEngineHeat(DefaultProps.TRIGGER_RED_ENGINE_HEAT, EnergyStage.RED, "buildcraft.engine.stage.red");
-	@Instance("BuildCraft|Energy")
+	@Instance("ConfessorCraft|Energy")
 	public static BuildCraftEnergy instance;
 
 	@EventHandler

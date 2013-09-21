@@ -80,7 +80,7 @@ import cpw.mods.fml.common.registry.TickRegistry;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
-@Mod(name = "BuildCraft", version = Version.VERSION, useMetadata = false, modid = "BuildCraft|Core", acceptedMinecraftVersions = "[1.6,1.7)", dependencies = "required-after:Forge@[9.10.0.800,)")
+@Mod(name = "ConfessorCraft", version = Version.VERSION, useMetadata = false, modid = "ConfessorCraft|Core", acceptedMinecraftVersions = "[1.6,1.7)", dependencies = "required-after:Forge@[9.10.0.800,)")
 @NetworkMod(channels = { DefaultProps.NET_CHANNEL_NAME }, packetHandler = PacketHandler.class, clientSideRequired = true, serverSideRequired = true)
 public class BuildCraftCore {
 	public static enum RenderMode {
@@ -162,7 +162,7 @@ public class BuildCraftCore {
 
 	public static final Logger bcLog = Logger.getLogger("Buildcraft");
 
-	@Instance("BuildCraft|Core")
+	@Instance("ConfessorCraft|Core")
 	public static BuildCraftCore instance;
 
     @EventHandler
@@ -171,11 +171,11 @@ public class BuildCraftCore {
 		Version.check();
 
 		bcLog.setParent(FMLLog.getLogger());
-		bcLog.info("Starting BuildCraft " + Version.getVersion());
-		bcLog.info("Copyright (c) SpaceToad, 2011");
-		bcLog.info("http://www.mod-buildcraft.com");
+		bcLog.info("Starting ConfessorCraft " + Version.getVersion());
+		//bcLog.info("Copyright (c) SpaceToad, 2011");
+		//bcLog.info("http://www.mod-buildcraft.com");
 		
-		mainConfiguration = new BuildCraftConfiguration(new File(evt.getModConfigurationDirectory(), "buildcraft/main.conf"));
+		mainConfiguration = new BuildCraftConfiguration(new File(evt.getModConfigurationDirectory(), "confessorcraft/main.conf"));
 		try {
 			mainConfiguration.load();
 

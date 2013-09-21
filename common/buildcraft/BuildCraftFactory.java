@@ -65,7 +65,7 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.Property;
 import net.minecraftforge.event.ForgeSubscribe;
 
-@Mod(name = "BuildCraft Factory", version = Version.VERSION, useMetadata = false, modid = "BuildCraft|Factory", dependencies = DefaultProps.DEPENDENCY_CORE)
+@Mod(name = "ConfessorCraft Factory", version = Version.VERSION, useMetadata = false, modid = "ConfessorCraft|Factory", dependencies = DefaultProps.DEPENDENCY_CORE)
 @NetworkMod(channels = {DefaultProps.NET_CHANNEL_NAME}, packetHandler = PacketHandlerFactory.class, clientSideRequired = true, serverSideRequired = true)
 public class BuildCraftFactory {
 
@@ -85,7 +85,7 @@ public class BuildCraftFactory {
 	public static float miningMultiplier = 1;
 	public static int miningDepth = 256;
 	public static PumpDimensionList pumpDimensionList;
-	@Instance("BuildCraft|Factory")
+	@Instance("ConfessorCraft|Factory")
 	public static BuildCraftFactory instance;
 
 	@EventHandler

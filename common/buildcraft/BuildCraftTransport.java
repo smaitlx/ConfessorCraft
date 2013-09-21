@@ -110,7 +110,7 @@ import net.minecraftforge.common.Configuration;
 import net.minecraftforge.common.ForgeDirection;
 import net.minecraftforge.common.Property;
 
-@Mod(version = Version.VERSION, modid = "BuildCraft|Transport", name = "Buildcraft Transport", dependencies = DefaultProps.DEPENDENCY_CORE)
+@Mod(version = Version.VERSION, modid = "ConfessorCraft|Transport", name = "ConfessorCraft Transport", dependencies = DefaultProps.DEPENDENCY_CORE)
 @NetworkMod(channels = {DefaultProps.NET_CHANNEL_NAME}, packetHandler = PacketHandlerTransport.class)
 public class BuildCraftTransport {
 
@@ -182,7 +182,7 @@ public class BuildCraftTransport {
 	public static BCAction actionSingleEnergyPulse = new ActionSingleEnergyPulse(DefaultProps.ACTION_SINGLE_ENERGY_PULSE);
 	public static BCAction[] actionPipeColor = new BCAction[16];
 	public static BCAction[] actionPipeDirection = new BCAction[16];
-	@Instance("BuildCraft|Transport")
+	@Instance("ConfessorCraft|Transport")
 	public static BuildCraftTransport instance;
 	public IIconProvider pipeIconProvider = new PipeIconProvider();
 	public IIconProvider gateIconProvider = new GateIconProvider();

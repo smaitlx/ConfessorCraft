@@ -88,7 +88,7 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.Property;
 import net.minecraftforge.event.ForgeSubscribe;
 
-@Mod(name = "BuildCraft Builders", version = Version.VERSION, useMetadata = false, modid = "BuildCraft|Builders", dependencies = DefaultProps.DEPENDENCY_CORE)
+@Mod(name = "ConfessorCraft Builders", version = Version.VERSION, useMetadata = false, modid = "ConfessorCraft|Builders", dependencies = DefaultProps.DEPENDENCY_CORE)
 @NetworkMod(channels = {DefaultProps.NET_CHANNEL_NAME}, packetHandler = PacketHandlerBuilders.class, clientSideRequired = true, serverSideRequired = true)
 public class BuildCraftBuilders {
 
@@ -108,7 +108,7 @@ public class BuildCraftBuilders {
 	private static BptRootIndex rootBptIndex;
 	public static TreeMap<String, BptPlayerIndex> playerLibrary = new TreeMap<String, BptPlayerIndex>();
 	private static LinkedList<IBuilderHook> hooks = new LinkedList<IBuilderHook>();
-	@Instance("BuildCraft|Builders")
+	@Instance("ConfessorCraft|Builders")
 	public static BuildCraftBuilders instance;
 
 	@EventHandler

@@ -38,14 +38,14 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.Property;
 
-@Mod(name = "BuildCraft Silicon", version = Version.VERSION, useMetadata = false, modid = "BuildCraft|Silicon", dependencies = DefaultProps.DEPENDENCY_TRANSPORT)
+@Mod(name = "ConfessorCraft Silicon", version = Version.VERSION, useMetadata = false, modid = "ConfessorCraft|Silicon", dependencies = DefaultProps.DEPENDENCY_TRANSPORT)
 @NetworkMod(channels = {DefaultProps.NET_CHANNEL_NAME}, packetHandler = PacketHandlerSilicon.class, clientSideRequired = true, serverSideRequired = true)
 public class BuildCraftSilicon {
 
 	public static Item redstoneChipset;
 	public static BlockLaser laserBlock;
 	public static BlockLaserTable assemblyTableBlock;
-	@Instance("BuildCraft|Silicon")
+	@Instance("ConfessorCraft|Silicon")
 	public static BuildCraftSilicon instance;
 
 	@EventHandler
